@@ -58,8 +58,8 @@ if "logged_in" not in st.session_state:
 if not st.session_state["logged_in"]:
     login_form()
 else:
-    st.sidebar.title(f"Olá, {st.session_state["user"]}!")
-    st.sidebar.write(f"**Perfil:** {st.session_state["role"].capitalize()}")
+    st.sidebar.title(f"Olá, {st.session_state['user']}!")
+    st.sidebar.write(f"**Perfil:** {st.session_state['role'].capitalize()}")
 
     if st.session_state["role"] == "admin":
         st.sidebar.header("Administração")
